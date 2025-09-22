@@ -1,31 +1,12 @@
+/* src/css/main.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    @apply scroll-smooth;
-  }
-  
-  body {
-    @apply font-sans text-gray-900 antialiased;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif font-medium;
-  }
-}
-
-@layer components {
-  .btn-primary {
-    @apply bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors duration-200;
-  }
-  
-  .btn-secondary {
-    @apply bg-white text-primary-600 border border-primary-600 px-6 py-3 rounded-lg hover:bg-primary-50 transition-colors duration-200;
-  }
-  
-  .container-custom {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
+/* Opcional: Adicionar um estilo base para o corpo */
+body {
+    font-family: 'Inter', sans-serif;
 }

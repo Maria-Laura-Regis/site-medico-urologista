@@ -10,13 +10,20 @@
     "lint": "eslint . --ext .js,.html",
     "format": "prettier --write ."
   },
-  "keywords": ["medicina", "urologia", "site-institucional"],
+  "keywords": [
+    "medicina",
+    "urologia",
+    "site-institucional"
+  ],
   "author": "Seu Nome",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6",
-    "vite": "^5.0.7"
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "tailwind": "^2.3.1"
   }
 }
