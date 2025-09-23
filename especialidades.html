@@ -5,10 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Especialidades - Dr. Aderivaldo Cabral</title>
     <link rel="stylesheet" href="/src/css/main.css">
+    <style>
+        body {
+            background-image: url('/fotocirurgiapapai.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .specialty-description {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+        }
+        .specialty-description.visible {
+            max-height: 200px; /* Altura suficiente para o texto */
+            opacity: 1;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-700">
+<body class="text-gray-700">
 
-    <header class="bg-white shadow-sm sticky top-0 z-10">
+    <header class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-10">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="text-xl font-bold text-primary">Dr. Aderivaldo Cabral</a>
             <ul class="flex space-x-8 text-gray-600">
@@ -22,49 +40,114 @@
     </header>
 
     <main class="container mx-auto px-6 py-20">
-        <div class="bg-white p-10 rounded-lg shadow-md max-w-4xl mx-auto">
+        <div class="bg-white/90 backdrop-blur-sm p-10 rounded-lg shadow-md max-w-4xl mx-auto">
             <div class="text-center mb-10">
                 <h1 class="text-4xl font-bold text-primary">Áreas de Atuação</h1>
-                <p class="mt-2 text-lg text-gray-600">Tratamento abrangente e especializado nas diversas áreas da urologia.</p>
+                <p class="mt-2 text-lg text-gray-600">Ofereço um cuidado especializado e completo, cobrindo as diversas áreas da urologia para atender você da melhor forma.</p>
             </div>
         
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
-                <div class="bg-secondary p-4 rounded-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                
+                <div class="bg-secondary p-4 rounded-lg flex flex-col">
                     <p class="font-semibold text-primary">Urologia Reconstrutiva</p>
+                    <button class="text-sm text-primary font-semibold mt-2 hover:underline focus:outline-none toggle-button">Ver mais</button>
+                    <div class="specialty-description text-left mt-2 text-sm text-gray-600">
+                        <p>Focada na correção de anomalias e danos ao trato urinário, como estenose de uretra, buscando restaurar a função e a qualidade de vida do paciente.</p>
+                    </div>
                 </div>
-                <div class="bg-secondary p-4 rounded-lg">
+
+                <div class="bg-secondary p-4 rounded-lg flex flex-col">
                     <p class="font-semibold text-primary">Incontinência Urinária</p>
+                    <button class="text-sm text-primary font-semibold mt-2 hover:underline focus:outline-none toggle-button">Ver mais</button>
+                    <div class="specialty-description text-left mt-2 text-sm text-gray-600">
+                        <p>Tratamento clínico e cirúrgico da perda involuntária de urina, uma condição que afeta homens e mulheres, com abordagens modernas para restaurar o controle.</p>
+                    </div>
                 </div>
-                <div class="bg-secondary p-4 rounded-lg">
+
+                <div class="bg-secondary p-4 rounded-lg flex flex-col">
                     <p class="font-semibold text-primary">Endourologia</p>
+                    <button class="text-sm text-primary font-semibold mt-2 hover:underline focus:outline-none toggle-button">Ver mais</button>
+                    <div class="specialty-description text-left mt-2 text-sm text-gray-600">
+                        <p>Procedimentos minimamente invasivos para tratar problemas como cálculos renais e tumores, utilizando câmeras e instrumentos finos através do trato urinário.</p>
+                    </div>
                 </div>
-                <div class="bg-secondary p-4 rounded-lg">
+
+                <div class="bg-secondary p-4 rounded-lg flex flex-col">
                     <p class="font-semibold text-primary">Neurourologia</p>
+                    <button class="text-sm text-primary font-semibold mt-2 hover:underline focus:outline-none toggle-button">Ver mais</button>
+                    <div class="specialty-description text-left mt-2 text-sm text-gray-600">
+                        <p>Diagnóstico e tratamento de disfunções urinárias causadas por doenças neurológicas, como lesão medular, esclerose múltipla e Parkinson.</p>
+                    </div>
                 </div>
-                <div class="bg-secondary p-4 rounded-lg">
+
+                <div class="bg-secondary p-4 rounded-lg flex flex-col">
                     <p class="font-semibold text-primary">Uro-oncologia</p>
+                    <button class="text-sm text-primary font-semibold mt-2 hover:underline focus:outline-none toggle-button">Ver mais</button>
+                    <div class="specialty-description text-left mt-2 text-sm text-gray-600">
+                        <p>Cuidado especializado no tratamento de cânceres do sistema urinário e genital masculino, como tumores de próstata, rim, bexiga e testículo.</p>
+                    </div>
                 </div>
-                <div class="bg-secondary p-4 rounded-lg">
+
+                <div class="bg-secondary p-4 rounded-lg flex flex-col">
                     <p class="font-semibold text-primary">Transplante Renal</p>
+                    <button class="text-sm text-primary font-semibold mt-2 hover:underline focus:outline-none toggle-button">Ver mais</button>
+                    <div class="specialty-description text-left mt-2 text-sm text-gray-600">
+                        <p>Atuação no processo de transplante de rim, desde a avaliação do doador e receptor até o acompanhamento pós-operatório para garantir o sucesso do procedimento.</p>
+                    </div>
                 </div>
-                 <div class="bg-secondary p-4 rounded-lg">
+
+                <div class="bg-secondary p-4 rounded-lg flex flex-col">
                     <p class="font-semibold text-primary">Urologia Feminina</p>
+                    <button class="text-sm text-primary font-semibold mt-2 hover:underline focus:outline-none toggle-button">Ver mais</button>
+                    <div class="specialty-description text-left mt-2 text-sm text-gray-600">
+                        <p>Foco nas condições urológicas específicas da mulher, como incontinência urinária, bexiga hiperativa, prolapsos genitais e infecções urinárias de repetição.</p>
+                    </div>
                 </div>
-                <div class="bg-secondary p-4 rounded-lg">
+
+                <div class="bg-secondary p-4 rounded-lg flex flex-col">
                     <p class="font-semibold text-primary">Andrologia</p>
+                    <button class="text-sm text-primary font-semibold mt-2 hover:underline focus:outline-none toggle-button">Ver mais</button>
+                    <div class="specialty-description text-left mt-2 text-sm text-gray-600">
+                        <p>Cuidado da saúde sexual e reprodutiva masculina, tratando condições como disfunção erétil, infertilidade, ejaculação precoce e distúrbios hormonais.</p>
+                    </div>
                 </div>
-                 <div class="bg-secondary p-4 rounded-lg">
+
+                <div class="bg-secondary p-4 rounded-lg flex flex-col">
                     <p class="font-semibold text-primary">Urologia Pediátrica</p>
+                    <button class="text-sm text-primary font-semibold mt-2 hover:underline focus:outline-none toggle-button">Ver mais</button>
+                    <div class="specialty-description text-left mt-2 text-sm text-gray-600">
+                        <p>Diagnóstico e tratamento de problemas urológicos em crianças, desde o período neonatal até a adolescência, como fimose, enurese noturna e refluxo vesicoureteral.</p>
+                    </div>
                 </div>
+
             </div>
         </div>
     </main>
 
-    <footer class="bg-gray-800 text-gray-300 mt-12">
+    <footer class="bg-gray-800/90 text-gray-300 mt-12">
         <div class="container mx-auto px-6 py-8 text-center">
             <p>&copy; 2025 Dr. Aderivaldo Cabral Dias Filho. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.toggle-button');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const description = this.nextElementSibling;
+                    description.classList.toggle('visible');
+
+                    if (description.classList.contains('visible')) {
+                        this.textContent = 'Ver menos';
+                    } else {
+                        this.textContent = 'Ver mais';
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
